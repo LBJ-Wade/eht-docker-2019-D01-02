@@ -34,8 +34,7 @@ else
 fi
 
 echo "Run imaging pipelines"
-#for d in difmap/ eht-imaging/ smili/; do
-for d in smili/; do
+for d in difmap/ eht-imaging/ smili/; do
     pushd $d
     ./run.sh
     popd > /dev/null
