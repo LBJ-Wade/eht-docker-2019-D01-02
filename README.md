@@ -3,6 +3,11 @@ A Docker container that includes all three imaging methods in the Event Horizon 
 
 ![example output plot](https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/smili-SR1_M87_2017_095_lo_hops_netcal_StokesI.png "Example output plot")
 
+Or if you prefer,
+
+![tweet with jet colormap EHT image](https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/tweet.jpg)
+
+
 ## How to use this
 
 If you want to run the codes for yourself, install *Docker Desktop*
