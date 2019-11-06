@@ -3,6 +3,8 @@ A Docker container that includes all three imaging methods in the Event Horizon 
 
 ![example output plot](https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/smili-SR1_M87_2017_095_lo_hops_netcal_StokesI.png "Example output plot")
 
+![animated output plots](https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/hot.gif "Animated output plot")
+
 Or if you prefer,
 
 ![tweet with jet colormap EHT image](https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/tweet.jpg)
