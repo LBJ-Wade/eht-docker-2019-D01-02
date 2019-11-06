@@ -35,7 +35,23 @@ fi
 
 echo "Run imaging pipelines"
 for d in difmap/ eht-imaging/ smili/; do
+    echo "Running $d"
     pushd $d
-    ./run.sh
+    time (./run.sh > log 2>&1)
     popd > /dev/null
 done
+
+if [ -d /tmp/out ]; then
+    echo "Copy outputs"
+    mkdir -p /tmp/out/difmap
+    cp difmap/{log,SR1*} /tmp/out/difmap
+    mkdir -p /tmp/out/eht-imaging
+    cp eht-imaging/{log,SR1*} /tmp/out/eht-imaging
+    mkdir -p /tmp/out/smili
+    cp smili/smili_reconstructions/SR1* smili/log /tmp/out/smili
+    for x in /tmp/out/*/*.fits; do
+        python -c "import matplotlib.pylab as plt; import astropy.io.fits as f; I=f.open('$x')[0].data; I=I[0,0,:,:] if len(I.shape)==4 else I; plt.imsave('$x'.replace('.fits','.png'), I, cmap='hot', origin='lower')"
+    done
+fi
+
+echo "Finished running in container $(hostname)"
