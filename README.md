@@ -1,7 +1,6 @@
 # eht-docker-2019-D01-02
 A Docker container that includes all three imaging methods in the Event Horizon Telescope's 2019-D01-02 data product
-
-(https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/smili-SR1_M87_2017_095_lo_hops_netcal_StokesI.png)
+![example output plot](https://github.com/dstndstn/eht-docker-2019-D01-02/raw/master/smili-SR1_M87_2017_095_lo_hops_netcal_StokesI.png "Example output plot")
 
 ## How to use this
 
