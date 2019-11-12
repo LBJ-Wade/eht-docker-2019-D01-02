@@ -34,7 +34,7 @@ else
 fi
 
 echo "Run imaging pipelines"
-for d in difmap/ eht-imaging/ smili/; do
+for d in smili/ eht-imaging/ difmap/; do
     echo "Running $d"
     pushd $d
     time (./run.sh > log 2>&1)

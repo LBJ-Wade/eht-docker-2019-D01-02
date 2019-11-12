@@ -50,7 +50,7 @@ RUN git clone https://github.com/eventhorizontelescope/2019-D01-02.git
 WORKDIR /src/2019-D01-02
 COPY EHTC_FirstM87Results_Apr2019_uvfits.tgz runx.sh /src/2019-D01-02/
 
-# Pre-cache astropy time data file
-RUN python -c "from astropy.time import Time; Time('2016:001').ut1"
+# Pre-cache astropy time data file -- not sure this works / is required?
+#RUN python -c "from astropy.time import Time; Time('2016:001').ut1"
 
 CMD ./runx.sh
